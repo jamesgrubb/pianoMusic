@@ -23,4 +23,11 @@ function my_add_excerpts_to_pages() {
 
 add_theme_support( 'menus' );
 
+function add_ie_html5_shim () {
+    echo '<!--[if lt IE 9]>';
+    echo '<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>';
+    echo '<![endif]-->';
+}
+add_action('wp_head', 'add_ie_html5_shim');
+
 ?>
