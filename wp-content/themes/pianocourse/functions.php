@@ -30,23 +30,4 @@ function add_ie_html5_shim () {
 }
 add_action('wp_head', 'add_ie_html5_shim');
 
-//add jqury to header
-
-function my_scripts_method() {
-    wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js');
-    wp_enqueue_script( 'jquery' );
-}    
- 
-add_action('wp_enqueue_scripts', 'my_scripts_method');
-	
-function add_this_script_footer(){ ?>
-
-<script src="<?php get_stylesheet_directory() ?>/js/scripts.js" />
-
-<?php } 
-
-add_action('wp_footer', 'add_this_script_footer');
-
-
 ?>

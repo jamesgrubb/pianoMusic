@@ -20,23 +20,29 @@ query_posts('post_type=page&post_parent='.$parent);
 		<?php $parent = $post->ID; ?>
 		
 	
-		<a href="<?php the_permalink(); ?>" class="consertina"> <h2><?php the_title(); ?></h2></a>
+		<a href="<?php the_permalink(); ?>" class="consertina"><h2><?php the_title(); ?></h2></a>
 		<div class="entry">
 		<?php the_content(); ?>
-	<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 		</div>
-	
 	</li>
 
 
 <?php endwhile; endif; 
 wp_reset_query(); // reset the query ?>
 </ul>
+<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 
-
-
-
-
+<?php
+query_posts('post_parent ='.$parent);
+?>
+<ul>
+<?php while (have_posts()) : the_post(); ?>
+<li>
+<span class="headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span>
+<?php the_excerpt(); ?>
+</li>
+<?php endwhile; ?>
+</ul>
 </div>
  
 </div><!-- #container -->
