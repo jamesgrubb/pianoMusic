@@ -1,0 +1,27 @@
+ul#customPageOrderList {
+	padding:4px 8px;
+	list-style:none;
+}
+li.lineitem {
+	border:1px solid #B2B2B2;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	background-color:#F1F1F1;
+	color:#000;
+	cursor:move;
+	font-size:13px;
+	margin:5px auto;
+	padding:2px 5px;
+	height:1.5em;
+	line-height:1.5em;
+}
+.sortable-placeholder{ 
+	border:1px dashed #B2B2B2;
+	margin:5px auto;
+	padding:2px 5px;
+	height:1.5em;
+	line-height:1.5em;
+}
+#icon-custompageorder {
+	background:url(../images/ordering.png) center center no-repeat
+	}

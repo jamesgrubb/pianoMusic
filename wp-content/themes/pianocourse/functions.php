@@ -39,7 +39,14 @@ function my_scripts_method() {
 }    
  
 add_action('wp_enqueue_scripts', 'my_scripts_method');
+	
+function add_this_script_footer(){ ?>
 
+<script src="<?php get_stylesheet_directory() ?>/js/scripts.js" />
+
+<?php } 
+
+add_action('wp_footer', 'add_this_script_footer');
 
 
 ?>
