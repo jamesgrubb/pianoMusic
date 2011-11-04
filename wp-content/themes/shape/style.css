@@ -1,0 +1,146 @@
+/*   
+Theme Name: Shape
+Theme URI: http://themeshapes.com/shape/
+Description: A search engine optimized website framework for WordPress.
+Author: Ian Stewart
+Author URI: http://themeshapes.com/
+Version: 0.1.2
+Tags: threaded-comments, microformats
+.
+The Shape Theme for WordPress is copyright ThemeShapes http://themeshapes.com/
+Like WordPress, this work is released under GNU General Public License, version 2 (GPL).
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+.
+*/
+
+
+/* Import a basic layout */
+@import url('styles/2c-r.css');
+
+/* Reset default browser styles */
+@import url('styles/reset.css');
+
+/* Rebuild default browser styles */
+@import url('styles/rebuild.css');
+
+/* Basic WordPress Styles */
+@import url('styles/wp.css');
+
+
+body {
+	margin: 1.5em 15%;
+}
+
+/* =Header
+-------------------------------------------------------------- */
+
+#branding {
+	margin: 0 0 1.5em 0;
+}
+
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#access {
+	margin: 0 0 1.5em 0;
+	overflow: auto;
+}
+.skip-link {
+	display: none;
+}
+.menu ul {
+	list-style: none;
+	margin: 0;
+}
+.menu ul ul {
+	display: none;
+}
+.menu li {
+	display: inline;
+}
+.menu a {
+	display: block;
+	float: left;
+}
+
+
+/* =Content
+-------------------------------------------------------------- */
+
+.post {
+	margin: 0 0 3em 0;	
+}
+.entry-content, .entry-summary {
+	margin: 1.5em 0 0 0;
+}
+
+
+/* =Navigation
+-------------------------------------------------------------- */
+
+.navigation {
+	margin: 0 0 1.5em 0;
+	overflow: auto;	
+}
+
+
+/* =Widget Areas
+-------------------------------------------------------------- */
+
+.widget-area ul {
+	list-style: none;
+	margin-left: 0;
+}
+.widget-area ul ul {
+	list-style: disc;
+	margin-left: 1.1em;
+}
+.widget-area ul ul ul {
+	margin-left: 2.5em;
+}
+.widget-container {
+	margin: 0 0 1.5em 0;
+}
+
+/* =Temporary styles until the
+		directory can read @import
+		
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+		
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
