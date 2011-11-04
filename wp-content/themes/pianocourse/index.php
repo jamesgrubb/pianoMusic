@@ -20,7 +20,7 @@ query_posts('post_type=page&post_parent='.$parent);
 		<?php $parent = $post->ID; ?>
 		
 	
-		<a href="<?php the_permalink(); ?>" class="consertina"><h2><?php the_title(); ?></h2></a>
+		<a href="<?php the_permalink(); ?>" class="consertina"> <h2><?php the_title(); ?></h2></a>
 		<div class="entry">
 		<?php the_content(); ?>
 		</div>
