@@ -8,8 +8,9 @@
 
 <?php get_header(); ?>
 <div id="st-accordion" class="st-accordion">
+
 <?php get_template_part ('loop','index'); ?>
-<?php get_template_part ('loop','news'); ?>
+
 </div>
 
 	 
