@@ -18,8 +18,6 @@
      	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri();?>/reset.css " />
  
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-
-<?php wp_enqueue_script('jquery'); ?>
  
     <?php wp_head(); ?>
  	
