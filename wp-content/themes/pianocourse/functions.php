@@ -43,5 +43,8 @@ if( !is_admin()){
    wp_enqueue_script('jquery');
 }
 
+//add oembed
+
+wp_oembed_add_provider( 'http://soundcloud.com/*','http://soundcloud.com/oembed' );
 
 ?>
