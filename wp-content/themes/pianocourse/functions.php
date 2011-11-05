@@ -23,11 +23,19 @@ function my_add_excerpts_to_pages() {
 
 add_theme_support( 'menus' );
 
-function add_ie_html5_shim () {
-    echo '<!--[if lt IE 9]>';
-    echo '<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>';
-    echo '<![endif]-->';
-}
-add_action('wp_head', 'add_ie_html5_shim');
+
+
+
+// add category nicenames in body and post class
+	function category_id_class($classes) {
+	    global $post;
+	    foreach((get_the_category($post->ID)) as $category)
+	        $classes[] = $category->category_nicename;
+	        return $classes;
+	}
+	add_filter('post_class', 'category_id_class');
+	add_filter('body_class', 'category_id_class');
+
+
 
 ?>

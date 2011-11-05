@@ -7,44 +7,25 @@
 ?>
 
 <?php get_header(); ?>
-<div id="container">
- 
-
- <?php
-query_posts('post_type=page&post_parent='.$parent);
-?>
-	<ul>
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<li>	
-		<div class="post" id="post-<?php the_ID(); ?>">
-		<?php $parent = $post->ID; ?>
-		
-	
-		<a href="<?php the_permalink(); ?>" class="consertina"><h2><?php the_title(); ?></h2></a>
-		<div class="entry">
-		<?php the_content(); ?>
-		</div>
-	</li>
-
-
-<?php endwhile; endif; 
-wp_reset_query(); // reset the query ?>
-</ul>
-<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
-
-<?php
-query_posts('post_parent ='.$parent);
-?>
+<div id="st-accordion" class="st-accordion">
 <ul>
-<?php while (have_posts()) : the_post(); ?>
+
+<?php $my_query = new WP_Query('post_type=page&post_parent='.$parent);  ?>
+<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>  
+    <?php query_posts('post_parent ='.$parent); ?>
 <li>
-<span class="headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span>
-<?php the_excerpt(); ?>
+<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?><span class="st-arrow">open or close</span></h2></a>
+<div class="st-content">
+<p><?php the_content(); ?></p>
+</div>
 </li>
 <?php endwhile; ?>
+
+
 </ul>
 </div>
- 
+
+	 
 </div><!-- #container -->
  
 <div id="primary" class="widget-area">
