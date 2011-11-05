@@ -26,10 +26,10 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <noscript>
 			<style>
-				.st-accordion ul li article {
+				.st-accordion ul li{
 					height:auto;
 				}
-				.st-accordion ul li article > a span{
+				.st-accordion ul li > a span{
 					visibility:hidden;
 				}
 			</style>

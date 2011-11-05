@@ -1,5 +1,3 @@
-/* @override http://localhost:8888/pianoMusic/wp-content/themes/pianocourse/style.css */
-
 /*
 Theme Name: Your Theme
 Theme URI: http://example.com/example/
@@ -36,7 +34,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 .st-accordion ul li:first-child{
     border-top:none;
 }
-.st-accordion ul li article > a{
+.st-accordion ul li > a{
     font-family: 'Josefin Slab',Georgia, serif;
     text-shadow: 1px 1px 1px #fff;
     font-size: 46px;
@@ -50,7 +48,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 	-ms-transition:  color 0.2s ease-in-out;
 	transition:  color 0.2s ease-in-out;
 }
-.st-accordion ul li article > a span{
+.st-accordion ul li > a span{
 	background: transparent url(images/down.png) no-repeat center center;
 	text-indent:-9000px;
 	width: 26px;
@@ -66,17 +64,17 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 	-ms-transition:  all 0.2s ease-in-out;
 	transition:  all 0.2s ease-in-out;
 }
-.st-accordion ul li article > a:hover{
+.st-accordion ul li > a:hover{
     color: #1693eb;
 }
-.st-accordion ul li article > a:hover span{
+.st-accordion ul li > a:hover span{
 	opacity:1;
 	right: 10px;
 }
-.st-accordion ul li.st-open article > a{
+.st-accordion ul li.st-open > a{
     color: #1693eb;
 }
-.st-accordion ul li.st-open article > a span{
+.st-accordion ul li.st-open > a span{
 	-webkit-transform:rotate(180deg);
 	-moz-transform:rotate(180deg);
     transform:rotate(180deg);

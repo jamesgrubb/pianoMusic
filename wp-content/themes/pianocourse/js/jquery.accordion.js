@@ -78,7 +78,7 @@
 			this.current		= this.options.open;
 			
 			// hide the contents so we can fade it in afterwards
-			this.$items.find('article div.st-content').hide();
+			this.$items.find('div.st-content').hide();
 			
 			// save original height and top of each item	
 			this._saveDimValues();
@@ -98,7 +98,7 @@
 				var $item		= $(this);
 				
 				$item.data({
-					originalHeight 	: $item.find(' article > a:first').height(),
+					originalHeight 	: $item.find('a:first').height(),
 					offsetTop		: $item.offset().top
 				});
 				
@@ -118,7 +118,7 @@
 			var instance	= this;
 			
 			// open / close item
-			this.$items.find('article > a:first').bind('click.accordion', function( event ) {
+			this.$items.find('a:first').bind('click.accordion', function( event ) {
 				
 				var $item			= $(this).parent();
 				
